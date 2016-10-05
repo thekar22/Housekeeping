@@ -6,6 +6,7 @@ class User < ActiveRecord::Base
 	     :recoverable, :rememberable, :trackable, :validatable
 
 	validates_uniqueness_of :telephone
+	validates_format_of :telephone, :with => /\A(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}\z/
 
 	def email_required?
 		false
