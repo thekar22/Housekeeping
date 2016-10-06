@@ -12,4 +12,5 @@
  *
  *= require_tree .
  *= require_self
+ *= require mobile-angular-ui/dist/css/mobile-angular-ui-base
  */

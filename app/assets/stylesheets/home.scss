@@ -1,3 +1,55 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body .app {
+	background: #eee;
+}
+
+.main-body {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+}
+
+.app-body {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+body .app-content {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.login-container {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#error_explanation {
+	h2 {
+		font-size: 18px;
+	}
+
+	li {
+		list-style-type: none;
+	}
+}
+
+.field {
+	margin: 5px;
+
+	input {
+		width: 80%;
+		font-size: 20px;
+	}
+}

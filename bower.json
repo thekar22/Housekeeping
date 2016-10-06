@@ -2,6 +2,6 @@
   "name": "housekeeping",
   "private": true,
   "dependencies": { 
-  	"angular": "^1.5.5"
+  	"mobile-angular-ui": "latest"
   }
 }
