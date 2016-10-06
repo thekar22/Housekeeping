@@ -1,0 +1,7 @@
+{
+  "name": "housekeeping",
+  "private": true,
+  "dependencies": { 
+  	"angular": "^1.5.5"
+  }
+}

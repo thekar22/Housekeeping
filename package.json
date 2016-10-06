@@ -1,0 +1,11 @@
+{
+  "name": "housekeeping",
+  "devDependencies" : {
+    "bower": "~1.6"
+  },
+  "dependencies": {
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">= 0.10"
+}
