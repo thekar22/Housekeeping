@@ -1,7 +1,8 @@
 {
-  "name": "housekeeping",
-  "private": true,
-  "dependencies": { 
-  	"mobile-angular-ui": "latest"
-  }
+	"name": "housekeeping",
+	"private": true,
+	"dependencies": { 
+		"mobile-angular-ui": "latest",
+		"angular-route": "latest"
+	}
 }

@@ -1,11 +1,10 @@
+console.log("n");
 angular.module('housekeeping', [
-  "ngRoute",
-  "mobile-angular-ui",
-  "mobile-angular-ui.touch",
-  "mobile-angular-ui.scrollable"
+	"ngRoute",
+	"mobile-angular-ui"
 ]).config(function($routeProvider) {
-      $routeProvider.when('/', { 
-        // ...
-      });
-      // ...
-  });
+	$routeProvider.when('/', { 
+	// ...
+	});
+	// ...
+});
