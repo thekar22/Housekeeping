@@ -4,7 +4,7 @@ angular.module('housekeeping')
     getMyAppointments: function (weeksFromNow) {
       return $http({
         method: 'GET',
-        url: '/myAppointments?' + $.param({weeksFromNow: weeksFromNow})
+        url: '/appointments/currentuser?' + $.param({weeksFromNow: weeksFromNow})
       });
     }
   };

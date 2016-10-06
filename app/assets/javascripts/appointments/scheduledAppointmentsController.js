@@ -3,8 +3,10 @@ angular.module('housekeeping')
 	function scheduledAppointmentsController($scope, scheduledAppointmentsService) {
 		initModule();		
 		function initModule(){
-			console.log("scheduled appointments controller");
-			scheduledAppointmentsService.getMyAppointments(3);
+			$scope.myAppointments = [];
+			scheduledAppointmentsService.getMyAppointments(3).then(function(response){
+				$scope.myAppointments = response.data;
+			});
 		}
 	}
 ]);

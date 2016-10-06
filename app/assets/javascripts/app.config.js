@@ -1,7 +1,8 @@
 angular.module('housekeeping', [
 	"templates",
 	"ngRoute",
-	"mobile-angular-ui"
+	"mobile-angular-ui",
+	'ng-rails-csrf'
 ]).config(function($routeProvider) {
 	$routeProvider
 	.when('/', { 

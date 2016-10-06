@@ -1,9 +1,16 @@
 angular.module('housekeeping')
-.controller('openAppointmentsController', ['$scope', 
-	function openAppointmentsController($scope) {
+.controller('openAppointmentsController', ['$scope', 'allAppointmentsService',
+	function openAppointmentsController($scope, allAppointmentsService) {
 		initModule();		
 		function initModule(){
-			console.log("open appointments controller");
+			$scope.allAppointments = [];
+			allAppointmentsService.getAllAppointments(3).then(function(response){
+				$scope.allAppointments = response.data;
+			});
+
+			allAppointmentsService.runRakeTask(3).then(function(response) {
+				console.log("ran");
+			});
 		}
 	}
 ]);

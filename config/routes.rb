@@ -3,8 +3,10 @@ Rails.application.routes.draw do
   devise_for :users
   root to: "home#index"
 
-
-  get '/myAppointments', to: 'appointments#getMyAppointments'
+  get '/appointments/currentuser', to: 'appointments#getMyAppointments'
+  get '/appointments/all', to: 'appointments#getAllAppointments'
+  post '/appointment/batch/create', to: 'appointments#runAdminRakeTask'
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
