@@ -27,6 +27,7 @@ body .app {
 body .app-content {
 	padding-top: 50px;
 	padding-bottom: 50px;
+	overflow: scroll;
 }
 
 .login-container {
@@ -52,4 +53,75 @@ body .app-content {
 		width: 80%;
 		font-size: 20px;
 	}
+}
+
+.appointmentCard {
+	position: relative;
+	height: 100px;
+	border-bottom: 1px solid #E0E0E0;
+	margin: 10px;
+}
+
+.appointmentCard.ng-enter {
+	transition: 1s;
+	opacity: 0;
+}
+
+.appointmentCard.ng-enter-active {
+	opacity: 1;
+}
+
+.appointmentCard.ng-leave {
+	transition: 1s;
+	opacity: 1;
+}
+
+.appointmentCard.ng-leave-active {
+	opacity: 0;
+}
+
+.appointmentAddress {
+	position: absolute;
+	font-size: 18px;
+	margin: 5px;
+	right:0px;
+}
+
+.appointmentDate {
+	height: 100%;
+	width: 120px;
+	position: absolute;	
+	left:0px;
+	border-right: 2px solid rebeccapurple;
+
+	span {
+		position:relative;
+		top: 30%;
+		font-size: 20px;
+		transform: translateY(-50%);
+	}
+}
+
+.appointmentButton {
+	cursor: pointer;
+	position: absolute;
+	height: 50px;
+	width: 120px;
+	bottom: 0px;
+	right: 0px;
+	padding: 5px;
+	font-size: 25px;	
+	color: white;
+}
+
+.appointmentButton.scheduleButton {	
+	background: #f0ad4e;
+}
+
+.appointmentButton.startButton {
+	background: #337ab7;
+}
+
+.appointmentButton.finishButton {	
+	background: green;
 }

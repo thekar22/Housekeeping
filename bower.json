@@ -3,6 +3,8 @@
 	"private": true,
 	"dependencies": { 
 		"mobile-angular-ui": "latest",
-		"angular-route": "latest"
+		"angular-route": "latest",
+		"angular-animate": "latest",
+		"angular-loading-bar": "latest"
 	}
 }

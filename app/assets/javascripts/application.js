@@ -13,8 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require angular
+//= require angular-animate
 //= require angular-route
 //= require angular-rails-templates
 //= require mobile-angular-ui
+//= require angular-loading-bar
 //= require ng-rails-csrf
 //= require_tree .

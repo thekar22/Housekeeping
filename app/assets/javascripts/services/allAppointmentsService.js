@@ -9,13 +9,10 @@ angular.module('housekeeping')
     },
     runRakeTask: function (weeksFromNow) {
       return $http({
-        method: 'POST',
-        url: '/appointment/batch/create',
-        data: {weeksFromNow: weeksFromNow}
+        method: 'GET',
+        url: '/appointment/batch/create'
       });
     }
-
-
   };
   return service;
 }]);

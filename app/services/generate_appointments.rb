@@ -7,9 +7,12 @@ class GenerateAppointments
 		t1 = Date.today.to_time
 		t2 = weeksFromNow.weeks.from_now.to_time
 
+
+
 		100.times do |x| 
-			randomTime = Time.at((t2.to_f - t1.to_f)*rand + t1.to_f)
+			randomTime = DateTime.parse(Time.at((t2.to_f - t1.to_f)*rand + t1.to_f).to_s)
 			randomAddress = addresses.sample[:address]
+			
 			Appointment.create(address: randomAddress, scheduled_at: randomTime)
 		end
 	end

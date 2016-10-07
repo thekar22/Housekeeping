@@ -1,9 +1,8 @@
 angular.module('housekeeping')
-.controller('applicationController', ['$scope', 
-	function applicationController($scope) {
-		initModule();
-		function initModule(){
-			console.log("application controller");
+.controller('applicationController', ['$scope', 'rakeTaskService',
+	function applicationController($scope, rakeTaskService) {
+		$scope.onRunRakeTaskClick = function() {
+			rakeTaskService.runRakeTask();
 		}
 	}
 ]);

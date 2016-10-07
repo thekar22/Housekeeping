@@ -1,9 +1,3 @@
-open appointments
-
-
-{{allAppointments.length}}
-
-<div ng-repeat="appointment in allAppointments">
-	{{appointment.id}}
-	{{appointment.scheduled_at}}
+<div ng-repeat="apt in allAppointments">
+	<appointment appointment="apt"> </appointment>
 </div>

@@ -20,6 +20,8 @@ gem 'rolify'
 gem 'angular-rails-templates'
 gem "pry"
 gem 'ng-rails-csrf'
+gem 'rails_12factor', group: :production
+
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

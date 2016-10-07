@@ -5,7 +5,10 @@ Rails.application.routes.draw do
 
   get '/appointments/currentuser', to: 'appointments#getMyAppointments'
   get '/appointments/all', to: 'appointments#getAllAppointments'
-  post '/appointment/batch/create', to: 'appointments#runAdminRakeTask'
+  post '/appointments/assign', to: 'appointments#assignAppointment'
+  post '/appointments/start', to: 'appointments#startAppointment'
+  post '/appointments/finish', to: 'appointments#finishAppointment'
+  get '/appointment/batch/create', to: 'appointments#runAdminRakeTask'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

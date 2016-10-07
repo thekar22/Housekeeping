@@ -1,9 +1,18 @@
 {
   "name": "housekeeping",
-  "devDependencies" : {
-    "bower": "~1.6"
-  },
   "dependencies": {
+  	"bower": "~1.6"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "2.13.x"
+  },
+  "scripts": {
+    "postinstall": "./node_modules/bower/bin/bower install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thekar22/Housekeeping.git"
   },
   "license": "MIT",
   "engines": {

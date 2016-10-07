@@ -1,6 +1,8 @@
-scheduled appointments
 
-<div ng-repeat="appointment in myAppointments">
-	{{appointment.id}}
-	{{appointment.scheduled_at}}
+<div ng-if="myAppointments.length === 0">
+	Schedule appointments Now!
+</div>
+
+<div ng-repeat="apt in myAppointments">	
+	<appointment appointment="apt"> </appointment>
 </div>
