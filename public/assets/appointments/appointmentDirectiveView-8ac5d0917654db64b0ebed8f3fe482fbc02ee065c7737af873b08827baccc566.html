@@ -1,0 +1,22 @@
+<div class="appointmentCard">
+	<div class="appointmentAddress"> {{appointment.address}} </div>
+	<div class="appointmentDate"> 
+		<span>
+			{{appointment.scheduled_at.toDateString()}} 
+		</span>
+		<span>
+			{{appointment.scheduleTime}}
+		</span>
+	</div>
+	<div ng-if="!appointment.user_id" class="appointmentButton scheduleButton">
+		Schedule
+	</div>
+	<div ng-if="appointment.user_id && appointment.canStart" class="appointmentButton startButton">
+		Start
+	</div>
+	<div ng-if="appointment.start_at && appointment.canStart" class="appointmentButton finishButton">
+		Finish!
+	</div>
+
+
+</div>

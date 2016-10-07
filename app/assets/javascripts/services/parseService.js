@@ -27,7 +27,6 @@ angular.module('housekeeping')
 
   function canStart(now, scheduleTime) {
     // can only start if appointment is 2 hours from now
-    
     var two_hours = 2 * 3600 * 1000;
 
     if ((scheduleTime.getTime() - now.getTime()) < two_hours) {      

@@ -29,8 +29,8 @@
 
 				<% if @hasAdminPriveleges %>
 					<div class="btn-group pull-right">
-						<div ng-click="onRunRakeTaskClick()" class="btn btn-navbar">						
-							<i class="fa">Run Rake Task</i>							
+						<div ng-click="onRunRakeTaskClick()" class="btn btn-navbar">
+							<span>Run Rake Task</span>
 						</div>
 					</div>
 				<% end %>
@@ -42,18 +42,18 @@
 				<% if user_signed_in? %>
 					<div class="btn-group justified">
 						<a href="/#/scheduled" class="btn btn-navbar btn-icon-only">
-							<span>My Appts</span>
-							<i class="fa fa-home fa-navbar"></i>
+							<i id="homeIcon" class="fa fa-navbar">&#8962;</i>
+							<span class="home bottom-button" >My Appts</span>
 						</a>
 						<a href="/#/open" class="btn btn-navbar btn-icon-only">
-							<span>Show Available</span>
-							<i class="fa fa-list fa-navbar"></i>
+							<i id="menuIcon" class="fa fa-navbar">&#9776;</i>
+							<span class="bottom-button">Show Available</span>
 						</a>
 					</div>
 				<% end %>
 			</div>
 
-			<div class="main-body">				
+			<div class="main-body">
 				<% if !user_signed_in? %>
 					<p class="notice"><%= notice %></p>
 					<p class="alert"><%= alert %></p>

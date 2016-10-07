@@ -5,7 +5,7 @@ angular.module('housekeeping', [
 	'ng-rails-csrf',
 	'ngAnimate',
 	'angular-loading-bar'
-]).config(function($routeProvider) {
+]).config(['$routeProvider', function($routeProvider) {
 	$routeProvider
 	.when('/', { 
 		templateUrl: 'appointments/scheduledAppointments.html', 
@@ -19,6 +19,6 @@ angular.module('housekeeping', [
 		templateUrl: 'appointments/scheduledAppointments.html', 
 		controller: 'scheduledAppointmentsController'
 	});
-}).config(['cfpLoadingBarProvider', function(cfpLoadingBarProvider) {
+}]).config(['cfpLoadingBarProvider', function(cfpLoadingBarProvider) {
     cfpLoadingBarProvider.includeSpinner = false;
- }]);
+}]);
